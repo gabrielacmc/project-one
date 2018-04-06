@@ -14,11 +14,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/project.js"></script>
+    <script src="assets/javascript/project-two.js"></script>
 
    <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 
@@ -55,9 +55,9 @@
                     <label for="name"></label>
                     
                     <span class="input-group-addon" id="basic-addon1"></span>
-                    <input type="text" class="form-control" placeholder="Times Square, Metropolitan Museum of Art" aria-describedby="basic-addon1">
+                    <input id = "locationSelected" type="text" class="form-control" placeholder="Times Square, Metropolitan Museum of Art" aria-describedby="basic-addon1">
                 
-              <button type="button" class="btn btn-default">Submit</button>
+              <button type="button" class="btn btn-default" id="location">Submit</button>
                 </div>
               </div>
             </div>
@@ -79,7 +79,7 @@
                     <span class="input-group-addon" id="basic-addon1"></span>
                     <input type="text" class="form-control" placeholder="Times Square, Metropolitan Museum of Art" aria-describedby="basic-addon1">
                 
-              <button type="button" class="btn btn-default">Submit</button>
+              <button type="button" class="btn btn-default" id="interestpoint">Submit</button>
                 </div>
               </div>
             </div>
@@ -100,17 +100,8 @@
           <div class="panel-heading">
             <h3 class="panel-title">Your Results on Google Map</h3>
           </div>
-          <div class="panel-body">
-            <a href="https://github.com/JocelynChoi">
-              <img src="#" id="twitter1">
-            </a>
-
-            <a href="https://www.linkedin.com/in/jocelyn-choi-168a0628/">
-              <img src="#" id="twitter">
-            </a>
-            <a href="https://stackoverflow.com/users/9374852/jocelyn-choi?tab=profile">
-              <img src="#" id="twitter">
-            </a>
+          <div id="map">
+            
           </div>
         </div>
       </div>
@@ -179,9 +170,12 @@
 
   <footer>
     <div class="container">
-      &copy Copyright 2018 Gabi Nicole Jocelyn Rpdney
+      &copy Copyright 2018 Gabi Nicole Jocelyn Rodney
     </div>
   </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIxGfQn0QePtVWkz6vFL31V-gi7hbKLnY&callback=initMap"
+  async defer></script>
 
 </body>
 

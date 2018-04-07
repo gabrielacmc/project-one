@@ -1,7 +1,7 @@
 var recommendationCounter = 0;
 var numRecommendations;
 var queryUrl;
-var categoryCounter = 0;
+//var categoryCounter = 0;
 
 function runThis(numRecommendations) { }
 
@@ -41,9 +41,9 @@ $.ajax({
         //userSelection.addClass("selection");
         //userSelection.attr("id" + categoryCounter);
         if (userSelection === "4d4b7104d754a06370d81259") {
-            for (var j = 0; j <= 9; j++) {
-                categoryCounter++;
-
+            for (var j = 0; j < results.length; j++) {
+                
+                //categoryCounter++;
                 //var userSelection = $("<p>").text(result.response.group.results[j].venue.categories[0].name);
                 //userSelection.addClass("selection");
                 //userSelection.attr("id" + categoryCounter);

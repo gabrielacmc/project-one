@@ -383,12 +383,12 @@ function initMap() {
                 console.log(result)
                 console.log(queryURL)
                 console.log(result.response.groups[0].items.length)
-                for (j = 0; j < 5; j++) {
-                    // while (j<5){
-                    $("#rec-section").append("<p>" + result.response.groups[0].items[5].venue.name + "</p>");
-                    // $("#rec-section").append("<p>" + result.response.group[0].items[j].venue.rating + "</p>" );
-                    //  }; 
-                     createMarkerFourSquare(result.response.groups[0].items[j].venue, j)
+                
+                for (var i = 0; i < 5; i++) {
+                    $("#rec-section").append("<p>" + result.response.groups[0].items[i].venue.name + "</p>");
+                };
+                for (j = 0; j < result.response.groups[0].items.length; j++) {
+                    createMarkerFourSquare(result.response.groups[0].items[j].venue, j)
                 }
 
             })
@@ -449,27 +449,27 @@ function detailsCallback(results, status) {
 
 function createMarkerFourSquare(venue, j) {
 
-        var latitude = parseFloat(venue.location.lat);
-        var longitude = parseFloat(venue.location.lng);
-        var newPosition = { lat: latitude, lng: longitude }
-        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    var latitude = parseFloat(venue.location.lat);
+    var longitude = parseFloat(venue.location.lng);
+    var newPosition = { lat: latitude, lng: longitude }
+    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-        var marker = new google.maps.Marker({
-            map: map,
-            position: newPosition,
-            title: venue.name,
-            label: labels[j]
-        });
+    var marker = new google.maps.Marker({
+        map: map,
+        position: newPosition,
+        title: venue.name,
+        label: labels[j]
+    });
 
-        google.maps.event.addListener(marker, 'click', function () {
+    google.maps.event.addListener(marker, 'click', function () {
 
-            var locationName = "<p><strong> " + venue.name + "</strong></p>";
-            var locationAddress = "<p>Address: " + venue.location.address + "</br>";
-            //var locationPhone = "Phone Number: " + result.response.groups[0].items.venue.name + "</p>";
+        var locationName = "<p><strong> " + venue.name + "</strong></p>";
+        var locationAddress = "<p>Address: " + venue.location.address + "</br>";
+        //var locationPhone = "Phone Number: " + result.response.groups[0].items.venue.name + "</p>";
 
-            infowindow.setContent(locationName + locationAddress);
-            infowindow.open(map, this);
-        });
+        infowindow.setContent(locationName + locationAddress);
+        infowindow.open(map, this);
+    });
 
 }
 

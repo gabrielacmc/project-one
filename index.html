@@ -14,7 +14,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/project.js"></script>
-  <script src="assets/javascript/project-two.js"></script>
+  <!-- <script src="assets/javascript/project-two.js"></script> -->
   <script type="text/javascript" src="assets/javascript/jquery.cycle.all.2.74.js"></script>
 
 
@@ -65,6 +65,14 @@
             </div>
           </div>
 
+          <audio id="myAudio" controls>
+      
+            <source src="assets/music/race.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio><br>
+      
+          <button onclick="enableLoop()" type="button">Enable loop</button>
+      <button onclick="disableLoop()" type="button">Disable loop</button>
 
           <!-- <div class="row">
             <div class="col-md-12">
@@ -116,43 +124,33 @@
       <div class="panel-body" id="user-selection">
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7104d754a06370d81259">Arts and Entertainment</label>
+            <input class = "check" type="checkbox" value="4d4b7104d754a06370d81259">Arts and Entertainment</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06372d81259">College and University</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06372d81259">College and University</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06373d81259">Event</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06373d81259">Event</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06374d81259">Food</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06374d81259">Food</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06376d81259">Nightlife Spot</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06376d81259">Nightlife Spot</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06377d81259">Outdoors and Recreation</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06377d81259">Outdoors and Recreation</label>
         </div>
         <div class="checkbox">
           <label>
-            <input type="checkbox" value="4d4b7105d754a06375d81259">Professional and Other Places</label>
+            <input class = "check" type="checkbox" value="4d4b7105d754a06378d81259">Shop and Service</label>
         </div>
         <div class="checkbox">
-          <label>
-            <input type="checkbox" value="4e67e38e036454776db1fb3a">Residence</label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="4d4b7105d754a06378d81259">Shop and Service</label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="4d4b7105d754a06379d81259">Travel and Transport</label>
         </div>
         <button type="button" class="btn btn-default" id="recSearch">
           <span class="glyphicon glyphicon-search"></span> Search

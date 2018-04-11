@@ -1,3 +1,15 @@
+var x = document.getElementById("myAudio");
+
+function enableLoop() { 
+     x.loop = true;
+     x.load();
+ } 
+
+ function disableLoop() { 
+     x.loop = false;
+     x.load();
+ }
+
 /*!
  * jQuery Cycle Plugin (with Transition Definitions)
  * Examples and documentation at: http://jquery.malsup.com/cycle/

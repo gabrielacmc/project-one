@@ -454,12 +454,21 @@ function createMarkerFourSquare(venue, j) {
     var newPosition = { lat: latitude, lng: longitude }
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+    if ( j < 5){
     var marker = new google.maps.Marker({
         map: map,
         position: newPosition,
         title: venue.name,
         label: labels[j]
     });
+    }
+    else{
+        var marker = new google.maps.Marker({
+            map: map,
+            position: newPosition,
+            title: venue.name,
+        });
+    }
 
     google.maps.event.addListener(marker, 'click', function () {
 

@@ -10,7 +10,7 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Courgette|Dancing+Script|Playfair+Display+SC" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/project.js"></script>
@@ -36,7 +36,8 @@
       <div class="row">
         <div class="col-md-12" id="whitebackground">
           <div class="page-header">
-            <h1>Perfect hotel one click away!</h1>
+            <h1><b>Your Perfect Hotel</b></h1>
+              <h2>..Just One Click Away!</h2>
           </div>
         </div>
       </div>
@@ -79,65 +80,89 @@
         </div>
 
 
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">What Do You Want To Do?</h3>
-            </div>
-            <div class="panel-body" id="user-selection">
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7104d754a06370d81259">Arts and Entertainment</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06372d81259">College and University</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06373d81259">Event</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06374d81259">Food</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06376d81259">Nightlife Spot</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06377d81259">Outdoors and Recreation</label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input class="check" type="checkbox" value="4d4b7105d754a06378d81259">Shop and Service</label>
-              </div>
-              <div class="checkbox">
-              </div>
-              <button type="button" class="btn btn-default" id="recSearch">
-                <span class="glyphicon glyphicon-search"></span> Search
-              </button>
-            </div>
-          </div>
+  <div class="col-md-6" id="whatToDo">
+    <div class="panel panel-default">
+      <div class="panel-heading" id="test">
+        <h3 class="panel-title">What Do You Want To Do?</h3>
+      </div>
+      <div class="panel-body" id="user-selection">
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7104d754a06370d81259">Arts and Entertainment</label>
         </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06372d81259">College and University</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06373d81259">Event</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06374d81259">Food</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06376d81259">Nightlife Spot</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06377d81259">Outdoors and Recreation</label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input class="check" type="checkbox" value="4d4b7105d754a06378d81259">Shop and Service</label>
+        </div>
+        <div class="checkbox">
+        </div>
+      <button type="button" class="btn btn-default" id="recSearch">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </div>
+  </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Top Recommendations Near You</h3>
+  <div class="row">
+    <div class="col-md-10" id="recommend">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Top Recommendations Near You</h3>
+        </div>
+        <div class="panel-body" id="rec-section">
+          <div class="row">
+              <div class="col-xs-6 col-md-1">
+                </div>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <img src="..." alt="...">
+              </a>
             </div>
-            <div class="panel-body" id="rec-section">
-                <!-- Insert DIVS here with recommendations -->
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <img src="..." alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <img src="..." alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <img src="..." alt="...">
+              </a>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <a href="#" class="thumbnail">
+                <img src="..." alt="...">
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <footer>
     <div class="container">
       &copy Copyright 2018 Gabi Nicole Jocelyn

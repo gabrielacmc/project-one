@@ -11,29 +11,10 @@
   
   #whitebackground {
     
-    padding: 25px;
+    padding: 0px;
   }
   
-  /* .navbar-brand {
-    background-color: #4aaaa5;
-    width: 650px;
-    height: 100px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    text-align: center;
-    text-decoration: none;
-    } */
-  /* 
-    .nav navbar-nav navbar-right{
-      width: 100px;
-    } */
   
-  .navbar-brand span{
-  color:#efeee7;
-  }
-
   #white{
     color:#efeee7;
   }
@@ -58,6 +39,7 @@
     padding-bottom: 20px;
     line-height: 49px;
     font-size: 75px;
+    opacity: 0.5;
   } 
   
   label {
@@ -90,9 +72,13 @@
     margin-top: 50px;
   }
   
+  #mapHolder{
+    padding: 0px;
+  }
+
   #map {
-    height: 500px;
-    width: 608px;
+    height: 355px;
+    width: 100%;
   }
   
   

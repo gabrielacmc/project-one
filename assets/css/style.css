@@ -10,7 +10,6 @@
 }
   
   #whitebackground {
-    
     padding: 25px;
   }
   
@@ -53,24 +52,46 @@
 
   h1{
     color: black;
-    font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 600;
     padding-bottom: 20px;
     line-height: 49px;
-    font-size: 75px;
+    font-size: 80px;
+    font-family: 'Courgette', cursive;
+    text-align: center;
   } 
-  
-  label {
-    font-size: 25px;
-    color:rgb(37, 37, 207);
-    background: lightskyblue
-  }
-  
+
+  h2{
+    color: black;
+    font-weight: 600;
+    padding-bottom: 20px;
+    line-height: 49px;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+  } 
+
   .panel-title {
-    font-size: 27px;
+    font-size: 30px;
     background: white;
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  .check {
+    font-family: 'Barlow', sans-serif;
   }
   
+#whatToDo {
+ background-color: #c3f2e5;
+ color: black;
+ font-size: 25px;
+ padding: 15px;
+}
+
+#recommend {
+  text-align: center;
+  margin-left: 100px;
+}
+
   .col-md-4 {
     text-align: center;
     }
@@ -94,5 +115,8 @@
     height: 500px;
     width: 608px;
   }
-  
+
+  #rec-section {
+    align-items: center;
+  }
   

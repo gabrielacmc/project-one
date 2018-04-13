@@ -6,6 +6,8 @@
 <p>Your Perfect Hotel...just one click away provides personalized recommendations of hotels in the area of choice and things to do, as well as places to go (Arts and Entertainment, Events, Food, Outdoors and Recreation).</p>
 
 <p>Once the user selects the category, five recommendations will populate.  The venue names will display, the rating 
+  
+  ![Optional Text](../master/assets/images/perfecthotel.png)
 
 
 <strong>Authors: Gabi, Nicole and Jocelyn </strong>

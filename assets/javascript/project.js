@@ -383,18 +383,56 @@ function initMap() {
                 console.log(result)
                 console.log(queryURL)
                 console.log(result.response.groups[0].items.length)
-                
+                $("#recommend").removeClass("hidden")
+
                 for (var i = 0; i < 5; i++) {
-                    $("#rec-section").append("<p>" + result.response.groups[0].items[i].venue.name + "</p>");
+                    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+                    if (result.response.groups[0].items[i].venue.url != undefined) {
+                        var url = result.response.groups[0].items[i].venue.url
+                        $("#rec-"+ i ).html("<a href=" + url + " target=_blank>" + result.response.groups[0].items[i].venue.name + "<a>");
+                    }
+                    else {
+                        $("#rec-"+ i ).html("<p><strong>" + result.response.groups[0].items[i].venue.name + "</strong></p>");
+                    }    
+
+                    if (result.response.groups[0].items[i].venue.rating != undefined) {
+                        $("#rec-"+ i).append("<p>Rating: " + result.response.groups[0].items[i].venue.rating + "</p>");                    }
+                    
+                    if (result.response.groups[0].items[i].tips[0].text != undefined) {
+                        $("#rec-"+ i).append("<p>Top Review: " + result.response.groups[0].items[i].tips[0].text + "</p>");
+                    }
+                    
+                    $("#rec-"+ i).append("<p><strong>Map Label: " + labels[i] + "<strong></p>");
+                    
+                    // var price = result.response.groups[0].items[i].venue.price.tier
+                    // if (price == 1) {
+                    //     $("#rec-"+ i).append("<p> $ </p>");
+                    // }
+                    // else if (price == 2) {
+                    //     $("#rec-"+ i).append("<p> $$ </p>");
+                    // }
+                    // else if (price == 3) {
+                    //     $("#rec-"+ i).append("<p> $$$ </p>");
+                    // }
+                    // else if (price == 4) {
+                    //     $("#rec-"+ i).append("<p> $$$$ </p>");
+                    // }
+                    // else if (price == 5) {
+                    //     $("#rec-"+ i).append("<p> $$$$$ </p>");
+                    // } else {
+                    //     console.log("undefined");
+                    // // }
                 };
-                for (j = 0; j < result.response.groups[0].items.length; j++) {
-                    createMarkerFourSquare(result.response.groups[0].items[j].venue, j)
-                }
 
-            })
+            for (j = 0; j < result.response.groups[0].items.length; j++) {
+                createMarkerFourSquare(result.response.groups[0].items[j].venue, j)
+            }
+
         })
+    })
 
-    });
+});
 
 }
 
@@ -454,15 +492,15 @@ function createMarkerFourSquare(venue, j) {
     var newPosition = { lat: latitude, lng: longitude }
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-    if ( j < 5){
-    var marker = new google.maps.Marker({
-        map: map,
-        position: newPosition,
-        title: venue.name,
-        label: labels[j]
-    });
+    if (j < 5) {
+        var marker = new google.maps.Marker({
+            map: map,
+            position: newPosition,
+            title: venue.name,
+            label: labels[j]
+        });
     }
-    else{
+    else {
         var marker = new google.maps.Marker({
             map: map,
             position: newPosition,

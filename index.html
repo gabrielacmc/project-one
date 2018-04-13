@@ -14,7 +14,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/project.js"></script>
-  <!-- <script src="assets/javascript/project-two.js"></script> -->
   <script type="text/javascript" src="assets/javascript/jquery.cycle.all.2.74.js"></script>
 </head>
 
@@ -53,17 +52,18 @@
             <div class="panel-body">
               <input id="locationSelected" type="text" class="form-control spacing" placeholder="Times Square; New York, NY; 10023" aria-describedby="basic-addon1">
 
-              <button type="button" class="btn btn-default" id="location"><span class="glyphicon glyphicon-search"></span> Search</button>
+              <button type="button" class="btn btn-default" id="location">
+                <span class="glyphicon glyphicon-search"></span> Search</button>
 
               <div class="row spacing">
                 <label for="name"></label>
                 <div>
-                  <div id = "audio">
+                  <div id="audio">
                     <audio id="myAudio" controls>
                       <source src="assets/music/race.mp3" type="audio/mpeg"> Your browser does not support the audio element.</source>
                     </audio>
                   </div>
-                  <div >
+                  <div>
                     <button class="btn btn-default " onclick="enableLoop()" type="button">Enable loop</button>
                     <button class="btn btn-default " onclick="disableLoop()" type="button">Disable loop</button>
                   </div>
@@ -133,39 +133,37 @@
       </div>
 
       <div class="row">
-        <div class="col-md-10" id="recommend">
+        <div class="col-md-12 hidden" id="recommend">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Top Recommendations Near You</h3>
             </div>
             <div class="panel-body" id="rec-section">
               <div class="row">
-                <div class="col-xs-6 col-md-1">
+                <div class="col-xs-6 col-md-3">
+                  <div class="thumbnail" id="rec-0">
+
+                  </div>
                 </div>
-                <div class="col-xs-6 col-md-2">
-                  <a href="#" class="thumbnail">
-                    <img src="..." alt="...">
-                  </a>
+                <div class="col-xs-6 col-md-3">
+                  <div class="thumbnail" id="rec-1">
+
+                  </div>
                 </div>
-                <div class="col-xs-6 col-md-2">
-                  <a href="#" class="thumbnail">
-                    <img src="..." alt="...">
-                  </a>
+                <div class="col-xs-6 col-md-3">
+                  <div class="thumbnail" id="rec-2">
+
+                  </div>
                 </div>
-                <div class="col-xs-6 col-md-2">
-                  <a href="#" class="thumbnail">
-                    <img src="..." alt="...">
-                  </a>
+                <div class="col-xs-6 col-md-3">
+                  <div class="thumbnail" id="rec-3">
+
+                  </div>
                 </div>
-                <div class="col-xs-6 col-md-2">
-                  <a href="#" class="thumbnail">
-                    <img src="..." alt="...">
-                  </a>
-                </div>
-                <div class="col-xs-6 col-md-2">
-                  <a href="#" class="thumbnail">
-                    <img src="..." alt="...">
-                  </a>
+                <div class="col-xs-6 col-md-3">
+                  <div class="thumbnail" id="rec-4">
+
+                  </div>
                 </div>
               </div>
             </div>
